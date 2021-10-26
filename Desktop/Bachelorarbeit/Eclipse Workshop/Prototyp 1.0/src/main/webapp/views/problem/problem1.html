@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+		  	<h2>Problemstellung</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Definiere deine Problemstellung</h3>
+	  	</div>
+	  </div>
+	  <div class="InputArea">
+	  <div class="wrapper">
+	  	<textarea class="WholePageArea" name="problem" id="problem"></textarea>
+	  	</div>
+	  </div>
+	  <div class="InformationArea">
+	   <div class="InformationText">
+			<b>Hilfestellung:</b> <br>
+		  	<label>Welches Problem möchte ich genauer verstehen bzw. lösen aus den Problemen des Bereichs?</label> <br> <br>
+			<label>Wie ist das gewählte Problem im Forschungsthema eingebettet?</label> <br> <br>
+	   		<label>Für wen besteht das Problem? Wann? Warum?</label> <br> <br>
+	   		<label>Ist das Problem in weitere Problem zerlegbar?</label> <br> <br>
+	   		
+		   	<b>Beispiele:</b> <br>
+		  	<label>Lernerfolg für Studierende in der digitalen Gruppenarbeit sicherstellen</label> <br> <br>
+			<label>Gestaltung eines prototypischen Tools</label> <br> <br>
+	   </div>
+	  </div>
+  		<div class="Navigation-Bar">
+	  		<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a class="active" href="problem1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+				  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				</div>
+			</div> 
+		</div>  	
+	</div>
+	<script type="text/javascript">
+		if(sessionStorage.getItem("problem")){
+			document.getElementById("problem").innerHTML = sessionStorage.getItem("problem")
+		}
+	
+	
+		function saveInSession() {
+			var data = document.getElementById("problem").value
+			sessionStorage.setItem("problem", data);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+		  	<h2>Persönliche Daten</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Eigene Person</h3>
+	  	</div>
+	  </div>
+	  <div class="InputArea">
+	  <div class="wrapper">
+	  	<textarea class="WholePageArea" name="ownPerson" id="person"></textarea>
+	  	</div>
+	  </div>
+	  <div class="InformationArea">
+	   <div class="InformationText">
+		   	<b>Studiengang</b> <br>
+		  	<label>Was studierst Du?</label> <br>
+			<label>Warum studierst Du genau dieses Fach?</label> <br> <br>
+			<b>Studienverlauf</b><br>
+		  	<label>Hast Du bereits studiert?</label> <br>
+			<label>Welche Erfahrungen haben Dich geprägt?</label> <br> <br>
+			<b>Typ Mensch</b><br>
+		  	<label>Wo würdest Du Dich verorten?</label> <br>
+			<label>Theorie oder Praxis?</label> <br>
+		  	<label>Plan oder Chaos?</label> <br>
+			<label>Selbstständige Arbeiten oder Starke Betreuung?</label> <br>
+			<label>Schüchtern oder Offen?</label> <br>
+		  	<label>Panisch oder Stressresistent?</label> <br>
+			<label>Schweigen oder Schreien?</label> <br>
+	   </div>
+	  </div>
+  		<div class="Navigation-Bar">
+	  		<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a class="active" href="pers1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+			  	 	<a href="pers2.html" onclick="saveInSession()"><img alt="" src="../../icons/2.png"></a> 
+			  	 	<a href="pers3.html" onclick="saveInSession()"><img alt="" src="../../icons/3.png"></a> 
+			  	 	<a href="pers4.html" onclick="saveInSession()"><img alt="" src="../../icons/4.png"></a> 
+			  	 	<a href="pers5.html" onclick="saveInSession()"><img alt="" src="../../icons/5.png"></a> 
+				  	<a href="pers6.html" onclick="saveInSession()"><img alt="" src="../../icons/6.png"></a> 
+				  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				</div>
+			</div> 
+		</div>  	
+	</div>
+	
+	<script type="text/javascript">
+		if(sessionStorage.getItem("pers")){
+			document.getElementById("person").innerHTML = sessionStorage.getItem("pers")
+		}
+	
+	
+		function saveInSession() {
+			var data = document.getElementById("person").value
+			sessionStorage.setItem("pers", data);
+		}
+	</script>
+	
+</body>
+</html>

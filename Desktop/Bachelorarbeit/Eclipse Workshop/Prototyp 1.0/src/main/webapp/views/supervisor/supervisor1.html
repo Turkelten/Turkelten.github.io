@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+		  	<h2>Betreuer</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Dies ist ein Dummy</h3>
+	  	</div>
+	  </div>
+	  <div class="InputArea">
+	  <div class="wrapper">
+	  	<textarea class="WholePageArea" name="supervisor" id="supervisor"></textarea>
+	  	</div>
+	  </div>
+	  <div class="InformationArea">
+	   <div class="InformationText">
+		   	<b>Dies ist ein Dummy</b> <br>
+		  	<label>Dies ist ein Dummy</label> <br>
+	   </div>
+	  </div>
+  		<div class="Navigation-Bar">
+	  		<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a class="active" href="supervisor1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+				  	<a href="supervisorSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				</div>
+			</div> 
+		</div>  	
+	</div>
+	
+	<script type="text/javascript">
+		if(sessionStorage.getItem("supervisor")){
+			document.getElementById("supervisor").innerHTML = sessionStorage.getItem("supervisor")
+		}
+	
+	
+		function saveInSession() {
+			var data = document.getElementById("supervisor").value
+			sessionStorage.setItem("supervisor", data);
+		}
+	</script>
+	
+</body>
+</html>

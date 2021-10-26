@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+			  	<h2>Forschungsthema</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Definiere dein Forschungsthema.</h3>
+	  	</div>
+	  </div>
+	  <div class="InputArea">
+	  <div class="wrapper">
+	  	<textarea class="WholePageArea" name="topic" id="topic"></textarea>
+	  	</div>
+	  </div>
+	  <div class="InformationArea">
+	   <div class="InformationText">
+		   	<b>Hilfestellung:</b> <br>
+		  	<label>In welchem großen Bereich möchte ich forschen?</label> <br> <br>
+			<label>Ist es ein Überlappungsbereich zwischen verschiedenen Bereichen wie bspw, BWL, Psychologie und IT oder eher isoliert?</label> <br> <br>
+	   		<label>Wo sind Grenzen zu anderen Bereichen?</label> <br> <br>
+	   		<label>Wie ist das Thema in Bezug zur Witschaftsinformatik zu setzen?</label> <br> <br>
+	   </div>
+	  </div>
+  		<div class="Navigation-Bar">
+	  		<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a class="active" href="topic1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+			  	 	<a href="topicSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				</div>
+			</div> 
+		</div>  	
+	</div>
+	
+	<script type="text/javascript">
+		if(sessionStorage.getItem("topic")){
+			document.getElementById("topic").innerHTML = sessionStorage.getItem("topic")
+		}
+	
+	
+		function saveInSession() {
+			var data = document.getElementById("topic").value
+			sessionStorage.setItem("topic", data);
+		}
+	</script>
+	
+</body>
+</html>

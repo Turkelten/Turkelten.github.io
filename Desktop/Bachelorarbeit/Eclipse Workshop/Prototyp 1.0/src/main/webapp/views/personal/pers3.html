@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" href="../../style.css">
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+		  	<h2>Persönliche Daten</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Erwartungen</h3>
+	  	</div>
+	  </div>
+	  <div class="InputArea">
+	  	<div class="wrapper">
+	  	<textarea class="WholePageArea" id="expectations"></textarea>
+	  	</div>
+	  </div>
+	  <div class="InformationArea">
+	   <div class="InformationText">
+		  	<label>Wie sieht der optimale Prozess Deiner Abschlussarbeit aus?</label> <br><br>
+			<label>Möchtest Du bestehende Sachen verbessern oder Neues erschaffen?</label> <br> <br>
+			<label>Welche persönlichen Ziele verfolgst Du mit Deiner Arbeit?</label> <br><br>
+			<label>Was erwartest Du von Deiner Betreuungsperson im Rahmen Deiner Abschlussarbeit?</label> <br> <br>
+	   </div>
+	  </div>
+	  <div class="Navigation-Bar">
+		  	<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a href="pers1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+			  	 	<a href="pers2.html" onclick="saveInSession()"><img alt="" src="../../icons/2.png"></a> 
+			  	 	<a class="active" href="pers3.html" onclick="saveInSession()"><img alt="" src="../../icons/3.png"></a> 
+			  	 	<a href="pers4.html" onclick="saveInSession()"><img alt="" src="../../icons/4.png"></a> 
+			  	 	<a href="pers5.html" onclick="saveInSession()"><img alt="" src="../../icons/5.png"></a> 
+				  	<a href="pers6.html" onclick="saveInSession()"><img alt="" src="../../icons/6.png"></a> 
+				  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				</div>
+			</div> 
+		</div>
+	</div>
+	<script type="text/javascript">
+		if(sessionStorage.getItem("expect")){
+			document.getElementById("expectations").innerHTML = sessionStorage.getItem("expect")
+		}
+
+		function saveInSession() {
+			var data = document.getElementById("expectations").value
+			sessionStorage.setItem("expect", data);
+		}
+	</script>
+</body>
+</html>

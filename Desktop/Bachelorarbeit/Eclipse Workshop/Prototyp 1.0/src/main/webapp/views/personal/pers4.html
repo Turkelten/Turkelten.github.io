@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+		  	<h2>Persönliche Daten</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Erfahrungen</h3>
+	  	</div>
+	  </div>
+	  <div class="InputArea">
+	  	<div class="wrapper">
+	  	<textarea class="WholePageArea" id="experience"></textarea>
+	  	</div>
+	  </div>
+	  <div class="InformationArea">
+	   <div class="InformationText">
+		  	<label>In welchem Bereich hast Du gerne und viele Veranstaltungen belegt?</label> <br><br>
+			<label>Welche Erfahrung hast Du mit wissenschaftlichem Arbeiten?</label> <br> <br>
+			<label>		Wo würdest Du die Arbeit einordnen:</label> <br>
+			<label>			Management, BWL,</label> <br>
+			<label>			Wirtschaftsinformatik, Informatik</label> <br>
+			<label>			Mathematik</label> <br>
+			<label>		Welchen Titel hatte sie?</label> <br> 
+			<label>		Welche Fragestellung hatte sie?</label> <br> 
+			<label>		Welche Methoden hast Du genutzt?</label> <br> 
+			<label>		War sie eher theoretisch oder praktisch?</label> <br> 
+			<label>		Hattest Du Spaß dabei?</label> <br> 
+	   </div>
+	  </div>
+	  <div class="Navigation-Bar">
+	  	<div class="wrappermarginmid">
+			<div class="persNavbar">
+			 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+		 	 	<a href="pers1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+		  	 	<a href="pers2.html" onclick="saveInSession()"><img alt="" src="../../icons/2.png"></a> 
+		  	 	<a href="pers3.html" onclick="saveInSession()"><img alt="" src="../../icons/3.png"></a> 
+		  	 	<a class="active" href="pers4.html" onclick="saveInSession()"><img alt="" src="../../icons/4.png"></a> 
+		  	 	<a href="pers5.html" onclick="saveInSession()"><img alt="" src="../../icons/5.png"></a> 
+			  	<a href="pers6.html" onclick="saveInSession()"><img alt="" src="../../icons/6.png"></a> 
+			  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+			  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+			  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+			</div>
+		</div> 	
+	  </div>
+	</div>
+	<script type="text/javascript">
+		if(sessionStorage.getItem("exp")){
+			document.getElementById("experience").innerHTML = sessionStorage.getItem("exp")
+		}
+
+		function saveInSession() {
+			var data = document.getElementById("experience").value
+			sessionStorage.setItem("exp", data);
+		}
+	</script>
+</body>
+</html>

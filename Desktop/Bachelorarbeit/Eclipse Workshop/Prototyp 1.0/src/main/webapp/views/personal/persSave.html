@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body>
+	<div class="container">
+	  <div class="TitelArea">
+		  <div class="wrapper">
+		  	<h2>Übersicht</h2>
+		  </div>
+	  </div>
+	  <div class="SubtitelArea">
+	  	<div class="wrapper">
+	  		<h3>Bitte kontrolliere noch einmal deine zuvor getätigten Eingaben. Wenn du mit allem einverstanden bist, speichere unten rechts deine Daten.</h3>
+	  	</div>
+	  </div>
+	<div class="InputArea">
+	  	<div class="wrapper">
+	  		<label class="controllPageArealabel">Eigene Person</label>
+	  		<textarea class="controllPageArea" id="controllpers"></textarea>
+	  		<label class="controllPageArealabel">Interesse</label>
+	  		<textarea class="controllPageArea" id="controllint"></textarea>
+	  		<label class="controllPageArealabel">Erwartungen</label>
+		  	<textarea class="controllPageArea" id="controllexpect"></textarea>
+	  	</div>
+  	</div>
+	  <div class="InformationArea" style="padding: 0px;">
+	   <div class="wrapper">
+	  		<label class="controllPageArealabel">Erfahrungen</label>
+	  		<textarea class="controllPageArea" id="controllexp"></textarea>
+	  		<label class="controllPageArealabel">Fähigkeiten</label>
+	  		<textarea class="controllPageArea" id="controllskills"></textarea>
+	  		<label class="controllPageArealabel">Sonstige Anmerkungen</label>
+		  	<textarea class="controllPageArea" id="controlletc"></textarea>
+	  	</div>
+	  </div>
+	  <div class="Navigation-Bar">
+	  	<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a href="pers1.html"><img alt="" src="../../icons/1.png"></a> 
+			  	 	<a href="pers2.html"><img alt="" src="../../icons/2.png"></a> 
+			  	 	<a href="pers3.html"><img alt="" src="../../icons/3.png"></a> 
+			  	 	<a href="pers4.html"><img alt="" src="../../icons/4.png"></a> 
+			  	 	<a href="pers5.html"><img alt="" src="../../icons/5.png"></a> 
+				  	<a href="pers6.html"><img alt="" src="../../icons/6.png"></a> 
+				  	<a class="active" href="persSave.html"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href=""><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				  	<a style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
+				</div>
+			</div> 
+	  </div> 	
+	</div>
+	
+	<script src="../../controller/personalDataSave.js"></script>
+</body>
+</html>
