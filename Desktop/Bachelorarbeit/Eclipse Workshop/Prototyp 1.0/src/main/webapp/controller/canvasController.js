@@ -1,6 +1,6 @@
 	
 	function init() {
-			//Eigene Person check, setzen des bearbeitet Icons
+		//Eigene Person check, setzen des bearbeitet Icons
 		if(sessionStorage.getItem("isPersonSet") == "true"){
 			document.getElementById("persInputCheck").style.visibility = "visible";
 		}else{
@@ -48,6 +48,12 @@
 		}else{
 			document.getElementById("goalInputCheck").style.visibility = "hidden";
 		}
+		//Forschungsstrategie
+		if(sessionStorage.getItem("isStrategieSet") == "true"){
+			document.getElementById("strategieInputCheck").style.visibility = "visible";
+		}else{
+			document.getElementById("strategieInputCheck").style.visibility = "hidden";
+		}
 		//Methoden und Techniken
 		if(sessionStorage.getItem("isMethodSet") == "true"){
 			document.getElementById("methodsInputCheck").style.visibility = "visible";
@@ -66,6 +72,12 @@
 		}else{
 			document.getElementById("weaknessInputCheck").style.visibility = "hidden";
 		}
+		//Design
+		if(sessionStorage.getItem("isDesignSet") == "true"){
+			document.getElementById("designInputCheck").style.visibility = "visible";
+		}else{
+			document.getElementById("designInputCheck").style.visibility = "hidden";
+		}
 	}
 	
 	//Auslesen der gespeicherten Daten mit Export und localem Download
@@ -80,6 +92,27 @@
 		var isPersonSet = sessionStorage.getItem("isPersonSet");
 		var topic = sessionStorage.getItem("topic");
 		var isTopicSet = sessionStorage.getItem("isTopicSet");
+		var researchgoal = sessionStorage.getItem("researchgoal");
+		var isGoalSet = sessionStorage.getItem("isGoalSet");
+		var questions = sessionStorage.getItem("questions");
+		var isQuestionSet = sessionStorage.getItem("isQuestionSet");
+		var problem = sessionStorage.getItem("problem");
+		var isProblemSet = sessionStorage.getItem("isProblemSet");
+		var result = sessionStorage.getItem("result");
+		var isResultSet = sessionStorage.getItem("isResultSet");
+		var strategie = sessionStorage.getItem("strategie");
+		var isStrategieSet = sessionStorage.getItem("isStrategieSet");
+		var strength = sessionStorage.getItem("strength");
+		var isStrengthSet = sessionStorage.getItem("isStrengthSet");
+		var supervisor = sessionStorage.getItem("supervisor");
+		var isSupervisorSet = sessionStorage.getItem("isSupervisorSet");
+		var weaknesses = sessionStorage.getItem("weaknesses");	
+		var isWeaknessSet = sessionStorage.getItem("isWeaknessSet");	
+		var methods = sessionStorage.getItem("methods");	
+		var isMethodSet = sessionStorage.getItem("isMethodSet");
+		var design = sessionStorage.getItem("design");	
+		var isDesignSet = sessionStorage.getItem("isDesignSet");
+		
 		var data = {
 				personal: pers,
 				interests: interests,
@@ -87,15 +120,35 @@
 				experience: experience,
 			 	skills: skills,
 				etc: etc,
-				isPersSet: isPersonSet,
+				isPersonSet: isPersonSet,
 				topic: topic,
 				isTopicSet: isTopicSet,
+				researchgoal: researchgoal,
+				isGoalSet: isGoalSet,
+				questions: questions,
+				isQuestionSet: isQuestionSet,
+				problem: problem,
+				isProblemSet: isProblemSet,
+				result: result,
+				isResultSet: isResultSet,
+				strategie: strategie,
+				isStrategieSet: isStrategieSet,
+				strength: strength,
+				isStrengthSet: isStrengthSet,
+				supervisor: supervisor,
+				isSupervisorSet: isSupervisorSet,
+				weaknesses: weaknesses,
+				isWeaknessSet: isWeaknessSet,
+				design: design,
+				isDesignSet: isDesignSet,
+				methods: methods,
+				isMethodSet: isMethodSet,
 		    }
 		//String in JSON umwandeln
 		var jsonData = JSON.stringify(data);
 		sessionStorage.setItem("data", jsonData);
 		//Daten über download Funktion exportieren
-		download(jsonData, 'canvas.txt', 'text/plain');
+		download(jsonData, 'canvasSave.txt', 'text/plain');
 	}
 	
 	

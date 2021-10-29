@@ -6,17 +6,13 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Prototype</title>
 </head>
-<body>
+<body onload="loadparameter()">
 	<div class="container">
 	  <div class="TitelArea">
-		  <div class="wrapper">
-			  	<h2>Forschungsthema</h2>
-		  </div>
+		  	<h2>Forschungsthema</h2>
 	  </div>
 	  <div class="SubtitelArea">
-	  	<div class="wrapper">
 	  		<h3>Definiere dein Forschungsthema.</h3>
-	  	</div>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
@@ -25,7 +21,7 @@
 	  </div>
 	  <div class="InformationArea">
 	   <div class="InformationText">
-		   	<b>Hilfestellung:</b> <br>
+		   	<b>Leitfragen</b> <br>
 		  	<label>In welchem großen Bereich möchte ich forschen?</label> <br> <br>
 			<label>Ist es ein Überlappungsbereich zwischen verschiedenen Bereichen wie bspw, BWL, Psychologie und IT oder eher isoliert?</label> <br> <br>
 	   		<label>Wo sind Grenzen zu anderen Bereichen?</label> <br> <br>
@@ -45,16 +41,8 @@
 		</div>  	
 	</div>
 	
-	<script type="text/javascript">
-		if(sessionStorage.getItem("topic")){
-			document.getElementById("topic").innerHTML = sessionStorage.getItem("topic")
-		}
+	<script type="text/javascript" src="../../controller/topicController.js">
 	
-	
-		function saveInSession() {
-			var data = document.getElementById("topic").value
-			sessionStorage.setItem("topic", data);
-		}
 	</script>
 	
 </body>

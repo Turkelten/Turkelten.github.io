@@ -6,24 +6,20 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Prototype</title>
 </head>
-<body>
+<body onload="loadControllPara()">
 	<div class="container">
 	  <div class="TitelArea">
-		  <div class="wrapper">
 		  	<h2>Übersicht</h2>
-		  </div>
 	  </div>
 	  <div class="SubtitelArea">
-	  	<div class="wrapper">
 	  		<h3>Bitte kontrolliere noch einmal deine zuvor getätigten Eingaben. Wenn du mit allem einverstanden bist, speichere unten rechts deine Daten.</h3>
-	  	</div>
 	  </div>
 	<div class="InputArea">
 	  	<div class="wrapper">
 	  		<textarea class="WholePageArea" id="controlltopic"></textarea>
 	  	</div>
   	</div>
-	  <div class="InformationArea" style="padding: 0px;">
+	  <div class="InformationArea">
 		   <div class="InformationText">
 			   	<b>Kontrolle</b> <br>
 			  	<label>Eigene, forschungsthemenbezogene Interessensfelder werden dargestellt.</label> <br> <br>
@@ -48,6 +44,6 @@
 			</div> 
 	  </div> 	
 	</div>
-	<script src="../../controller/topicSaveController.js"></script>
+	<script src="../../controller/topicController.js"></script>
 </body>
 </html>

@@ -10,9 +10,21 @@
 			}
 		 
 	 }
-	
+	function loadControllPara(){
+		 if(sessionStorage.getItem("questions")){
+				document.getElementById("controllpage").innerHTML = sessionStorage.getItem("questions");
+		}
+	}
+		
 
 	function saveInSession() {
 		var data = document.getElementById("questions").value
 		sessionStorage.setItem("questions", data);
 	}
+	
+	function save(){
+		var data = document.getElementById("controllpage").value
+		sessionStorage.setItem("questions", data);
+		sessionStorage.setItem("isQuestionSet", true);
+	}
+	

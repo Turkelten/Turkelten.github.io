@@ -6,17 +6,13 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Prototype</title>
 </head>
-<body>
+<body onload="loadparameter()">
 	<div class="container">
 	  <div class="TitelArea">
-		  <div class="wrapper">
 		  	<h2>Stärken</h2>
-		  </div>
 	  </div>
 	  <div class="SubtitelArea">
-	  	<div class="wrapper">
-	  		<h3>Dies ist ein Dummy</h3>
-	  	</div>
+	  		<h3>Definieren Sie hier ihre Stärken</h3>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
@@ -25,16 +21,18 @@
 	  </div>
 	  <div class="InformationArea">
 	   <div class="InformationText">
-		   	<b>Dies ist ein Dummy</b> <br>
-		  	<label>Dies ist ein Dummy</label> <br>
+		   	<b>Leitfragen</b> <br>
+		  	<label>Was sind deine Stärken im Bezug auf dein Studium?</label> <br> <br>
+		  	<label>In welchen Modulen warst du sehr erfolgreich?</label> <br> <br>
+		  	<label>Wo liegen deine persönlichen Stärken?</label> <br> <br>
 	   </div>
 	  </div>
   		<div class="Navigation-Bar">
 	  		<div class="wrappermarginmid">
 				<div class="persNavbar">
 				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
-			 	 	<a class="active" href="pers1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
-				  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+			 	 	<a class="active" href="strength1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
+				  	<a href="strengthSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
 				</div>
@@ -42,16 +40,7 @@
 		</div>  	
 	</div>
 	
-	<script type="text/javascript">
-		if(sessionStorage.getItem("strength")){
-			document.getElementById("strength").innerHTML = sessionStorage.getItem("strength")
-		}
-	
-	
-		function saveInSession() {
-			var data = document.getElementById("strength").value
-			sessionStorage.setItem("strength", data);
-		}
+	<script type="text/javascript" src="../../controller/strengthController.js">
 	</script>
 	
 </body>

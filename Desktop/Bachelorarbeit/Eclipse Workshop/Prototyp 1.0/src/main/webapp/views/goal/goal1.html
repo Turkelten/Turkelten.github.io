@@ -6,17 +6,13 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Prototype</title>
 </head>
-<body>
+<body onload="loadparameter()">
 	<div class="container">
 	  <div class="TitelArea">
-		  <div class="wrapper">
 		  	<h2>Forschungsziel</h2>
-		  </div>
 	  </div>
 	  <div class="SubtitelArea">
-	  	<div class="wrapper">
 	  		<h3>Definiere dein Forschungsziel</h3>
-	  	</div>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
@@ -39,23 +35,14 @@
 				<div class="persNavbar">
 				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
 			 	 	<a class="active" href="goal1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
-				  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a href="goalSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
 				</div>
 			</div> 
 		</div>  	
 	</div>
-	<script type="text/javascript">
-		if(sessionStorage.getItem("researchgoal")){
-			document.getElementById("researchgoal").innerHTML = sessionStorage.getItem("researchgoal")
-		}
-	
-	
-		function saveInSession() {
-			var data = document.getElementById("researchgoal").value
-			sessionStorage.setItem("researchgoal", data);
-		}
+	<script type="text/javascript" src="../../controller/goalController.js">
 	</script>
 </body>
 </html>

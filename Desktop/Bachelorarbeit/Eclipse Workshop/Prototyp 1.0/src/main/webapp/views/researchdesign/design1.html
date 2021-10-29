@@ -6,17 +6,13 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Prototype</title>
 </head>
-<body>
+<body onload="loadparameter()">
 	<div class="container">
 	  <div class="TitelArea">
-		  <div class="wrapper">
-		  	<h2>Persönliche Daten</h2>
-		  </div>
+		  	<h2>Forschungsdesign</h2>
 	  </div>
 	  <div class="SubtitelArea">
-	  	<div class="wrapper">
-	  		<h3>Eigene Person</h3>
-	  	</div>
+	  		<h3>Machen Sie hier Angaben zu ihrem geplanten Forschungsdesign, dass Sie in der Arbeit verfolgen.</h3>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
@@ -29,12 +25,12 @@
 		  	<label>Wie planst du im Großen deine Forschungsfrage zu beantworten und das definierte Problem zu erforschen?</label> <br><br>
 			<label>Welche Nebenbedingungen musst du dabei besonders beachten?</label> <br> <br>
 		  	<label>Bist du sicher, dass du damit dein Forschungsziel erreichst?</label> <br><br> <br>
+			<b>Typ Mensch</b><br>
+		  	<label>Wo würdest Du Dich verorten?</label> <br> <br> <br>
 		  	<b>Deine Forschungsfragen</b><br>
 			<label id="lblquestion"></label> <br> <br> <br>
 			<b>Deine Problemstellung</b><br>
 			<label id="lblproblem"></label> <br> <br> <br>
-			<b>Typ Mensch</b><br>
-		  	<label>Wo würdest Du Dich verorten?</label> <br>
 	   </div>
 	  </div>
   		<div class="Navigation-Bar">
@@ -50,7 +46,7 @@
 		</div>  	
 	</div>
 	
-	<script type="text/javascript">
+	<script type="text/javascript" src="../../controller/designController.js">
 	</script>
 	
 </body>

@@ -30,6 +30,26 @@
 				sessionStorage.setItem("skills", result.skills);
 				sessionStorage.setItem("topic", result.topic);
 				sessionStorage.setItem("isTopicSet", result.isTopicSet);
+				sessionStorage.setItem("researchgoal", result.researchgoal);
+				sessionStorage.setItem("isGoalSet", result.isGoalSet);
+				sessionStorage.setItem("questions", result.questions);
+				sessionStorage.setItem("isQuestionSet", result.isQuestionSet);
+				sessionStorage.setItem("problem", result.problem);
+				sessionStorage.setItem("isProblemSet", result.isProblemSet);
+				sessionStorage.setItem("result", result.result);
+				sessionStorage.setItem("isResultSet", result.isResultSet);
+				sessionStorage.setItem("strategie", result.strategie);
+				sessionStorage.setItem("isStrategieSet", result.isStrategieSet);
+				sessionStorage.setItem("strength", result.strength);
+				sessionStorage.setItem("isStrengthSet", result.isStrengthSet);
+				sessionStorage.setItem("supervisor", result.supervisor);
+				sessionStorage.setItem("isSupervisorSet", result.isSupervisorSet);
+				sessionStorage.setItem("weaknesses", result.weaknesses);
+				sessionStorage.setItem("isWeaknessSet", result.isWeaknessSet);
+				sessionStorage.setItem("method", result.method);
+				sessionStorage.setItem("isMethodSet", result.isMethodSet);
+				sessionStorage.setItem("design", result.design);
+				sessionStorage.setItem("isDesignSet", result.isDesignSet);
 	        });
 			alert("Der Upload war erfolgreich");
 	        reader.readAsText(upload.files[0]); // Read the uploaded file

@@ -6,17 +6,13 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Prototype</title>
 </head>
-<body>
+<body onload="loadparameter()">
 	<div class="container">
 	  <div class="TitelArea">
-		  <div class="wrapper">
 		  	<h2>Forschungsergebnis</h2>
-		  </div>
 	  </div>
 	  <div class="SubtitelArea">
-	  	<div class="wrapper">
 	  		<h3>Dies ist ein Dummy</h3>
-	  	</div>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
@@ -34,7 +30,7 @@
 				<div class="persNavbar">
 				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
 			 	 	<a class="active" href="result1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
-				  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a href="resultSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
 				</div>
@@ -42,16 +38,8 @@
 		</div>  	
 	</div>
 	
-	<script type="text/javascript">
-		if(sessionStorage.getItem("result")){
-			document.getElementById("result").innerHTML = sessionStorage.getItem("result")
-		}
-	
-	
-		function saveInSession() {
-			var data = document.getElementById("result").value
-			sessionStorage.setItem("result", data);
-		}
+	<script type="text/javascript" src="../../controller/resultController.js">
+		
 	</script>
 	
 </body>
