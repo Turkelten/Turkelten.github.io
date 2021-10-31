@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Prototype</title>
+</head>
+<body onload="loadControllPara()">
+	<div class="container">
+	  <div class="TitelArea">
+		  	<h2>Übersicht</h2>
+	  </div>
+	  <div class="SubtitelArea">
+	  		<h3>Bitte kontrolliere noch einmal deine zuvor getätigten Eingaben. Wenn du mit allem einverstanden bist, speichere unten rechts deine Daten.</h3>
+	  </div>
+	<div class="InputArea">
+	  	<div class="wrapper">
+	  		<textarea class="WholePageArea" id="controllpage"></textarea>
+	  	</div>
+  	</div>
+	  <div class="InformationArea">
+		   <div class="InformationText">
+			   	<b>Kontrolle</b> <br>
+			  	<label>Eigene, forschungsthemenbezogene Interessensfelder werden dargestellt.</label> <br> <br>
+				<label>Die eigenen Interessensfelder werden von weiteren Themenfeldern abgegrenzt.</label> <br> <br>
+		   		<label>Ein Arbeitstitel wird formuliert.</label> <br> <br>
+		   		<label>Anhand des Titels der Arbeit werden Schwerpunkt und Zielsetzung der Arbeit deutlich.</label> <br> <br>
+		   		<label>Aus Titel, möglichem Untertitel, Forschungsfragen und Forschungsdesign ergibt sich eine trichterförmige Eingrenzung des Betrachtungsschwerpunktes.</label> <br> <br>
+		   		<label>Der Titel verspricht nichts, was nach Sichtung von Forschungsfragen und/oder Forschungs-zielen und Forschungsdesign voraussichtlich nicht auch eingehalten werden kann.</label> <br> <br>
+		   		<label>Zwischen den die Arbeit prägenden Themenfeldern und den Kompetenzen des bzw. der Betreuenden sind Zusammenhänge erkennbar.</label> <br> <br>
+		   </div> 
+ 		</div>
+	  <div class="Navigation-Bar">
+	  	<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
+			 	 	<a href="design1.html"><img alt="" src="../../icons/1.png"></a> 
+				  	<a class="active" href="designSave.html"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a style="float:right" href="../video.html"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href=""><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				  	<a style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
+				</div>
+			</div> 
+	  </div> 	
+	</div>
+	<script src="../../controller/designController.js"></script>
+</body>
+</html>
