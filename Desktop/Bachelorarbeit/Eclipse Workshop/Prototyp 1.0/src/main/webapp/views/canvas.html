@@ -179,15 +179,18 @@
 	<div class="canvasNavbarcontainer">
 	 		<div class="wrappermarginmid" style="padding: 10px">
 					<div class="persNavbar">
-					 	<a style="float:left" href="../index.html" ><img alt="" src="../icons/back.png"></a> 
-					 	<a style="float:left" href="import.html" ><img alt="" src="../icons/down-arrow.png"></a> 
-					 	<a style="float:left" onclick="onExportClick()"><img alt="" src="../icons/export.png"></a> 
-					 	<a style="float:left" href="print/print.html"><img alt="" src="../icons/printer.png"></a> 
+					 	<a id="backButton" style="float:left" href="../index.html" ><img alt="" src="../icons/back.png"></a> 
+					 	<a id="importButton" style="float:left" href="import.html" ><img alt="" src="../icons/down-arrow.png"></a> 
+					 	<a id="exportButton" style="float:left" onclick="onExportClick()"><img alt="" src="../icons/export.png"></a> 
+					 	<a id="printButton" style="float:left" href="print/print.html"><img alt="" src="../icons/printer.png"></a> 
 					  	<a style="float:right" href="video.html" ><img alt="" src="../pictures/youtubeIcon.png"></a> 
 					  	<a style="float:right" href=""><img alt="" src="../pictures/speakerIcon.png"></a> 
 					</div>
 			</div> 	
  		</div>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 	<script src="../controller/canvasController.js"></script>
+	<script src="../controller/tooltipController.js"></script>
 </body>
 </html>

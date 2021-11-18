@@ -31,16 +31,19 @@
   		<div class="Navigation-Bar">
 	  		<div class="wrappermarginmid">
 				<div class="persNavbar">
-				 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+				 	<a id="canvasButton" style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
 			 	 	<a class="active" href="topic1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
-			  	 	<a href="topicSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+			  	 	<a id="checkButton" href="topicSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+			  	 	<a id="nextButton" href="topicSave.html" onclick="saveInSession()"><img alt="" src="../../icons/right.png"></a>
 				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
 				</div>
 			</div> 
 		</div>  	
 	</div>
-	
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../../controller/tooltipController.js"></script>
 	<script type="text/javascript" src="../../controller/topicController.js">
 	
 	</script>

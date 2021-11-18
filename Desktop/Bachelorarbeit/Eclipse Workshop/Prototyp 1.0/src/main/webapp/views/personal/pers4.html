@@ -38,20 +38,24 @@
 	  <div class="Navigation-Bar">
 	  	<div class="wrappermarginmid">
 			<div class="persNavbar">
-			 	<a style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
+			 	<a id="canvasButton" style="float:left" href="../canvas.html" onclick="saveInSession()"><img alt="" src="../../icons/back.png"></a> 
 		 	 	<a href="pers1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
 		  	 	<a href="pers2.html" onclick="saveInSession()"><img alt="" src="../../icons/2.png"></a> 
 		  	 	<a href="pers3.html" onclick="saveInSession()"><img alt="" src="../../icons/3.png"></a> 
 		  	 	<a class="active" href="pers4.html" onclick="saveInSession()"><img alt="" src="../../icons/4.png"></a> 
 		  	 	<a href="pers5.html" onclick="saveInSession()"><img alt="" src="../../icons/5.png"></a> 
 			  	<a href="pers6.html" onclick="saveInSession()"><img alt="" src="../../icons/6.png"></a> 
-			  	<a href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+			  	<a id="checkButton" href="persSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
+			  	<a id="nextButton" href="pers5.html" onclick="saveInSession()"><img alt="" src="../../icons/right.png"></a>
 			  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 			  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
 			</div>
 		</div> 	
 	  </div>
 	</div>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../../controller/tooltipController.js"></script>
 	<script type="text/javascript">
 		if(sessionStorage.getItem("exp")){
 			document.getElementById("experience").innerHTML = sessionStorage.getItem("exp")

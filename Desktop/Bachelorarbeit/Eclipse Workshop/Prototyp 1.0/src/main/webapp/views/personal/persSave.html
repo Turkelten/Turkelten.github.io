@@ -37,22 +37,24 @@
 	  <div class="Navigation-Bar">
 	  	<div class="wrappermarginmid">
 				<div class="persNavbar">
-				 	<a style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
+				 	<a id="canvasButton" style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
 			 	 	<a href="pers1.html"><img alt="" src="../../icons/1.png"></a> 
 			  	 	<a href="pers2.html"><img alt="" src="../../icons/2.png"></a> 
 			  	 	<a href="pers3.html"><img alt="" src="../../icons/3.png"></a> 
 			  	 	<a href="pers4.html"><img alt="" src="../../icons/4.png"></a> 
 			  	 	<a href="pers5.html"><img alt="" src="../../icons/5.png"></a> 
 				  	<a href="pers6.html"><img alt="" src="../../icons/6.png"></a> 
-				  	<a class="active" href="persSave.html"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a id="checkButton" class="active" href="persSave.html"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a style="float:right" href="../video.html"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href=""><img alt="" src="../../pictures/speakerIcon.png"></a> 
-				  	<a style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
+				  	<a id="safeButton" style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
 				</div>
 			</div> 
 	  </div> 	
 	</div>
-	
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../../controller/tooltipController.js"></script>
 	<script src="../../controller/personalDataSave.js"></script>
 </body>
 </html>

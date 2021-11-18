@@ -22,28 +22,31 @@
 	  <div class="InformationArea">
 		   <div class="InformationText">
 			   	<b>Kontrolle</b> <br>
-			  	<label>Eigene, forschungsthemenbezogene Interessensfelder werden dargestellt.</label> <br> <br>
-				<label>Die eigenen Interessensfelder werden von weiteren Themenfeldern abgegrenzt.</label> <br> <br>
-		   		<label>Ein Arbeitstitel wird formuliert.</label> <br> <br>
-		   		<label>Anhand des Titels der Arbeit werden Schwerpunkt und Zielsetzung der Arbeit deutlich.</label> <br> <br>
-		   		<label>Aus Titel, möglichem Untertitel, Forschungsfragen und Forschungsdesign ergibt sich eine trichterförmige Eingrenzung des Betrachtungsschwerpunktes.</label> <br> <br>
-		   		<label>Der Titel verspricht nichts, was nach Sichtung von Forschungsfragen und/oder Forschungs-zielen und Forschungsdesign voraussichtlich nicht auch eingehalten werden kann.</label> <br> <br>
-		   		<label>Zwischen den die Arbeit prägenden Themenfeldern und den Kompetenzen des bzw. der Betreuenden sind Zusammenhänge erkennbar.</label> <br> <br>
+			  	<label>Die erwarteten Ergebnisse der Arbeit werden beschrieben.</label> <br> <br>
+				<label>Die erwarteten Ergebnisse adressieren die Problemstellung.</label> <br> <br>
+		   		<label>Die erwarteten Ergebnisse passen zu den Forschungsfragen bzw. Forschungsziele.</label> <br> <br>
+		   		<label>Die erwarteten Ergebnisse passen zum Forschungsdesign, zur Forschungsstrategie und zu den eingeplanten Methoden und/oder Techniken.</label> <br> <br>
+		   		<label>Der erwartete Nutzen der Ergebnisse der Arbeit wird unter Bezugnahme von Nutznießern bzw. einer Zielgruppe beschrieben.</label> <br> <br>
+		   		<label>Die Nutznießer bzw. die Zielgruppe decken sich mit den im Rahmen der Identifikation der Problemstellung genannten AdressatInnen.</label> <br> <br>
+		   		<label>Die erwarteten Ergebnisse lassen eigenständige Leistungen erkennen.</label> <br> <br>
 		   </div> 
  		</div>
 	  <div class="Navigation-Bar">
 	  	<div class="wrappermarginmid">
 				<div class="persNavbar">
-				 	<a style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
+				 	<a id="canvasButton" style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
 			 	 	<a href="result1.html"><img alt="" src="../../icons/1.png"></a> 
-				  	<a class="active" href="resultSave.html"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a id="checkButton" class="active" href="resultSave.html"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a style="float:right" href="../video.html"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href=""><img alt="" src="../../pictures/speakerIcon.png"></a> 
-				  	<a style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
+				  	<a id="safeButton" style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
 				</div>
 			</div> 
 	  </div> 	
 	</div>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../../controller/tooltipController.js"></script>
 	<script src="../../controller/resultController.js"></script>
 </body>
 </html>

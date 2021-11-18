@@ -22,28 +22,27 @@
 	  <div class="InformationArea">
 		   <div class="InformationText">
 			   	<b>Kontrolle</b> <br>
-			  	<label>Eigene, forschungsthemenbezogene Interessensfelder werden dargestellt.</label> <br> <br>
-				<label>Die eigenen Interessensfelder werden von weiteren Themenfeldern abgegrenzt.</label> <br> <br>
-		   		<label>Ein Arbeitstitel wird formuliert.</label> <br> <br>
-		   		<label>Anhand des Titels der Arbeit werden Schwerpunkt und Zielsetzung der Arbeit deutlich.</label> <br> <br>
-		   		<label>Aus Titel, möglichem Untertitel, Forschungsfragen und Forschungsdesign ergibt sich eine trichterförmige Eingrenzung des Betrachtungsschwerpunktes.</label> <br> <br>
-		   		<label>Der Titel verspricht nichts, was nach Sichtung von Forschungsfragen und/oder Forschungs-zielen und Forschungsdesign voraussichtlich nicht auch eingehalten werden kann.</label> <br> <br>
-		   		<label>Zwischen den die Arbeit prägenden Themenfeldern und den Kompetenzen des bzw. der Betreuenden sind Zusammenhänge erkennbar.</label> <br> <br>
+			  	<label>Auf eine mögliche Einschränkung der zu berücksichtigenden Daten- und/oder Literaturquellen wird hingewiesen.</label> <br> <br>
+				<label>Die zu berücksichtigenden Daten- und/oder Literaturquellen eignen sich zur Beantwortung der Forschungsfragen bzw. zum Erreichen der Forschungsziele.</label> <br> <br>
+		   		<label>Die zur Beantwortung der Forschungsfragen und/oder zum Erreichen der Forschungsziele gewählte(n) Methode(n) und/oder Technik(en) werden genannt.</label> <br> <br>
 		   </div> 
  		</div>
 	  <div class="Navigation-Bar">
 	  	<div class="wrappermarginmid">
 				<div class="persNavbar">
-				 	<a style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
+				 	<a id="canvasButton"style="float:left" href="../canvas.html"><img alt="" src="../../icons/back.png"></a> 
 			 	 	<a href="questions1.html"><img alt="" src="../../icons/1.png"></a> 
-				  	<a class="active" href="questionSave.html"><img alt="" src="../../icons/notepad.png"></a> 
+				  	<a id="checkButton" class="active" href="questionSave.html"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a style="float:right" href="../video.html"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
 				  	<a style="float:right" href=""><img alt="" src="../../pictures/speakerIcon.png"></a> 
-				  	<a style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
+				  	<a id="safeButton" style="float:right" onclick="save()"><img alt="" src="../../icons/floppyIcon.png"></a> 
 				</div>
 			</div> 
 	  </div> 	
 	</div>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../../controller/tooltipController.js"></script>
 	<script src="../../controller/questionController.js"></script>
 </body>
 </html>
