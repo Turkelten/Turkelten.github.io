@@ -2,6 +2,7 @@
 	function init() {
 		//Eigene Person check, setzen des bearbeitet Icons
 		if(sessionStorage.getItem("isPersonSet") == "true"){
+			document.getElementById("pers").innerHTML   = sessionStorage.getItem("pers");
 			document.getElementById("interests").innerHTML   = sessionStorage.getItem("interests");
 			document.getElementById("expectation").innerHTML   = sessionStorage.getItem("expect");
 			document.getElementById("experience").innerHTML  = sessionStorage.getItem("exp");
