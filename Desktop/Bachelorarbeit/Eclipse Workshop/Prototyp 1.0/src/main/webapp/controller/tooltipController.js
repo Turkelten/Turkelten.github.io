@@ -1,5 +1,7 @@
+//Tooltipp Einstellung
+
 tippy('#backButton', {
-    content: 'Zurück zur Startseit',
+    content: 'Zurück zur Startseite',
   });
 tippy('#importButton', {
     content: 'JSON Importieren',
@@ -7,7 +9,7 @@ tippy('#importButton', {
 tippy('#exportButton', {
     content: 'JSON Exportieren',
   });
-tippy('#printButton', {
+tippy('#printPageButton', {
     content: 'Zur Druckübersicht',
   });
 tippy('#canvasButton', {
@@ -21,4 +23,10 @@ tippy('#nextButton', {
   });
 tippy('#safeButton', {
     content: 'Speichern',
+  });
+tippy('#videoButton', {
+    content: 'Infovideo abspielen',
+  });
+tippy('#printButton', {
+    content: 'Drucken',
   });

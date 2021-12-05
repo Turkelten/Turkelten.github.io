@@ -22,6 +22,7 @@ function loadControllPara(){
 		var data = document.getElementById("controllpage").value
 		sessionStorage.setItem("problem", data);
 		sessionStorage.setItem("isProblemSet", true);
+		alert("Das Speichern war erfolgreich");
 	}
 
 

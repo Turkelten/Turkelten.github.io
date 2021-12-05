@@ -20,4 +20,5 @@ function saveInSession() {
 		var data = document.getElementById("controllpage").value
 		sessionStorage.setItem("methods", data);
 		sessionStorage.setItem("isMethodSet", true);
+		alert("Das Speichern war erfolgreich");
 	}

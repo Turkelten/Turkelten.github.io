@@ -21,5 +21,6 @@ function save(){
 	var data = document.getElementById("controllpage").value
 	sessionStorage.setItem("weaknesses", data);
 	sessionStorage.setItem("isWeaknessSet", true);
+	alert("Das Speichern war erfolgreich");
 }
 	

@@ -46,7 +46,7 @@
 				sessionStorage.setItem("isSupervisorSet", result.isSupervisorSet);
 				sessionStorage.setItem("weaknesses", result.weaknesses);
 				sessionStorage.setItem("isWeaknessSet", result.isWeaknessSet);
-				sessionStorage.setItem("method", result.method);
+				sessionStorage.setItem("methods", result.methods);
 				sessionStorage.setItem("isMethodSet", result.isMethodSet);
 				sessionStorage.setItem("design", result.design);
 				sessionStorage.setItem("isDesignSet", result.isDesignSet);

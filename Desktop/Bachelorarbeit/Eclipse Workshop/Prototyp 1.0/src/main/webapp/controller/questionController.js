@@ -26,5 +26,6 @@
 		var data = document.getElementById("controllpage").value
 		sessionStorage.setItem("questions", data);
 		sessionStorage.setItem("isQuestionSet", true);
+		alert("Das Speichern war erfolgreich");
 	}
 	

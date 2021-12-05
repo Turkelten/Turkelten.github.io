@@ -20,4 +20,5 @@ function save() {
 	var pers = document.getElementById("controlltopic").value;			
 	sessionStorage.setItem("topic", pers);
 	sessionStorage.setItem("isTopicSet", true);
+	alert("Das Speichern war erfolgreich");
 }

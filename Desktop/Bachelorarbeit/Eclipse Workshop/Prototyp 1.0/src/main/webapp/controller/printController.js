@@ -45,7 +45,7 @@
 		}
 		//Methoden und Techniken
 		if(sessionStorage.getItem("isMethodSet") == "true"){
-			document.getElementById("method").innerHTML   = sessionStorage.getItem("method");
+			document.getElementById("method").innerHTML   = sessionStorage.getItem("methods");
 		}
 		//Forschungsergebnis
 		if(sessionStorage.getItem("isResultSet") == "true"){

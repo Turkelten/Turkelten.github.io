@@ -33,5 +33,6 @@ function loadControllPara(){
 		var data = document.getElementById("controllpage").value
 		sessionStorage.setItem("design", data);
 		sessionStorage.setItem("isDesignSet", true);
+		alert("Das Speichern war erfolgreich");
 	}
 	

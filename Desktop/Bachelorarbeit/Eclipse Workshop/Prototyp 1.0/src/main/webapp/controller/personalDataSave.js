@@ -23,6 +23,8 @@
 		sessionStorage.setItem("skills", skills);
 		sessionStorage.setItem("etc", etc);
 		sessionStorage.setItem("isPersonSet", true);
+		
+		alert("Das Speichern war erfolgreich");
 	}
 	
 

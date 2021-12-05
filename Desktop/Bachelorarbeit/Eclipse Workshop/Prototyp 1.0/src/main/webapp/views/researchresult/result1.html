@@ -12,17 +12,26 @@
 		  	<h2>Forschungsergebnis</h2>
 	  </div>
 	  <div class="SubtitelArea">
-	  		<h3>Dies ist ein Dummy</h3>
+	  		<h3>Geben Sie nun anhand ihrer zuvor getätigten Angaben ihr Forschungsergebnis an.</h3>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
-	  	<textarea class="WholePageArea" name="result" id="result"></textarea>
+	  	<textarea class="WholePageArea" name="result" id="result"  maxlength="100"></textarea>
 	  	</div>
 	  </div>
 	  <div class="InformationArea">
 	   <div class="InformationText">
-		   	<b>Dies ist ein Dummy</b> <br>
-		  	<label>Dies ist ein Dummy</label> <br>
+		   	<b>Leitfragen</b> <br>
+		  	<label>Welchen konkreten Output generierst du?</label> <br><br>
+		  	<label>Würde man diesen Output erwarten bei diesem Forschungsdesign? <br>
+		  	...bei dieser Art der Forschungsfrage und -ziel?</label> <br><br>
+	  		<label>Inwiefern erreichst du damit dein Forschungsziel?</label> <br><br> <br>
+	  		<b>Dein Forschungsdesign</b><br>
+			<label id="lbldesign"></label> <br> <br> <br>
+		  	<b>Deine Forschungsfragen</b><br>
+			<label id="lblquestion"></label> <br> <br> <br>
+			<b>Dein Forschungsziel</b><br>
+			<label id="lblgoal"></label> <br> <br> <br>
 	   </div>
 	  </div>
   		<div class="Navigation-Bar">
@@ -32,8 +41,8 @@
 			 	 	<a class="active" href="result1.html" onclick="saveInSession()"><img alt="" src="../../icons/1.png"></a> 
 				  	<a id="checkButton" href="resultSave.html" onclick="saveInSession()"><img alt="" src="../../icons/notepad.png"></a> 
 				  	<a id="nextButton" href="resultSave.html" onclick="saveInSession()"><img alt="" src="../../icons/right.png"></a>
-				  	<a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
-				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> 
+				  	<!-- <a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a>  -->
 				</div>
 			</div> 
 		</div>  	

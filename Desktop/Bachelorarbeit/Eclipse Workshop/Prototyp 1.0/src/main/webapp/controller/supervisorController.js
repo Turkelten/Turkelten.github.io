@@ -21,5 +21,6 @@ function save(){
 	var data = document.getElementById("controllpage").value
 	sessionStorage.setItem("supervisor", data);
 	sessionStorage.setItem("isSupervisorSet", true);
+	alert("Das Speichern war erfolgreich");
 }
 	

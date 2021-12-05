@@ -19,5 +19,6 @@ function save(){
 	var data = document.getElementById("controllpage").value
 	sessionStorage.setItem("strength", data);
 	sessionStorage.setItem("isStrengthSet", true);
+	alert("Das Speichern war erfolgreich");
 }
 	

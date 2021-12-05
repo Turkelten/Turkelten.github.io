@@ -20,5 +20,6 @@ function saveInSession() {
 		var data = document.getElementById("controllpage").value
 		sessionStorage.setItem("researchgoal", data);
 		sessionStorage.setItem("isGoalSet", true);
+		alert("Das Speichern war erfolgreich");
 	}
 	
