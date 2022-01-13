@@ -1,5 +1,5 @@
 function loadControllPara(){
-	 if(sessionStorage.getItem("problem")){
+	 if(sessionStorage.getItem("problem") && sessionStorage.getItem("problem") != null){
 			document.getElementById("controllpage").innerHTML = sessionStorage.getItem("problem");
 	}
 }
@@ -12,7 +12,7 @@ function loadControllPara(){
 
 
 	function loadparameter(){
-			if(sessionStorage.getItem("problem")){
+			if(sessionStorage.getItem("problem") && sessionStorage.getItem("problem") != null){
 			document.getElementById("problem").innerHTML = sessionStorage.getItem("problem")
 		}
 	

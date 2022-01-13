@@ -1,6 +1,6 @@
 
 function loadparameter(){
-	if(sessionStorage.getItem("strength")){
+	if(sessionStorage.getItem("strength") && sessionStorage.getItem("strength") != null){
 		document.getElementById("strength").innerHTML = sessionStorage.getItem("strength")
 	}
 }

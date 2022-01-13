@@ -1,5 +1,5 @@
 function loadparameter(){
-	 if(sessionStorage.getItem("researchgoal")){
+	 if(sessionStorage.getItem("researchgoal") && sessionStorage.getItem("researchgoal") != null){
 			document.getElementById("researchgoal").innerHTML = sessionStorage.getItem("researchgoal");
 	}
  }

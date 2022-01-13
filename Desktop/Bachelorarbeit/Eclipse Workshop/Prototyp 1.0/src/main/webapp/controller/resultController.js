@@ -1,5 +1,5 @@
 	function loadparameter(){
-		 if(sessionStorage.getItem("result")){
+		 if(sessionStorage.getItem("result") && sessionStorage.getItem("result") != null){
 			document.getElementById("result").innerHTML = sessionStorage.getItem("result")
 		} 
 		if(sessionStorage.getItem("questions")){

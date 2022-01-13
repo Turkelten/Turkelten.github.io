@@ -1,6 +1,6 @@
 
 function loadparameter(){
-	if(sessionStorage.getItem("strategie")){
+	if(sessionStorage.getItem("strategie") && sessionStorage.getItem("strategie") != null){
 		document.getElementById("strategie").innerHTML = sessionStorage.getItem("strategie")
 	}
 	if(sessionStorage.getItem("questions")){

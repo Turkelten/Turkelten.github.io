@@ -1,5 +1,5 @@
 function loadparameter(){
-	 if(sessionStorage.getItem("methods")){
+	 if(sessionStorage.getItem("methods") && sessionStorage.getItem("methods") != null){
 			document.getElementById("methods").innerHTML = sessionStorage.getItem("methods");
 	}
  }

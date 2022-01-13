@@ -7,7 +7,7 @@ function loadControllPara(){
 	}
 }
 function loadparameter(){
-	if(sessionStorage.getItem("topic")){
+	if(sessionStorage.getItem("topic") && sessionStorage.getItem("topic") != null){
 		document.getElementById("topic").innerHTML = sessionStorage.getItem("topic")
 	}
 }

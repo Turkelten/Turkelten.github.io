@@ -1,8 +1,8 @@
 	function loadparameter(){
-		 if(sessionStorage.getItem("questions")){
+		 if(sessionStorage.getItem("questions") && sessionStorage.getItem("questions") != null){
 				document.getElementById("questions").innerHTML = sessionStorage.getItem("questions");
 			}
-			if(sessionStorage.getItem("problem")){
+			if(sessionStorage.getItem("problem") && sessionStorage.getItem("problem") != null){
 				document.getElementById("lblallProblems").innerHTML = sessionStorage.getItem("problem");
 			}
 			if(sessionStorage.getItem("problem") == "" || sessionStorage.getItem("problem") == "undefined" || sessionStorage.getItem("problem") == null){

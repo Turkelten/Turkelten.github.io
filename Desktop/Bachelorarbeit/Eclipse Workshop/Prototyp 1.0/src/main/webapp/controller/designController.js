@@ -1,5 +1,5 @@
 function loadControllPara(){
-	 if(sessionStorage.getItem("design")){
+	 if(sessionStorage.getItem("design") && sessionStorage.getItem("design") != null){
 			document.getElementById("controllpage").innerHTML = sessionStorage.getItem("design");
 	}
 }

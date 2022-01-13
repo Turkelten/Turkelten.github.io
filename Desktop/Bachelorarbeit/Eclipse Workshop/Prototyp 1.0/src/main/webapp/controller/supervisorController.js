@@ -1,5 +1,5 @@
 function loadControllPara(){
-	if(sessionStorage.getItem("supervisor")){
+	if(sessionStorage.getItem("supervisor") && sessionStorage.getItem("supervisor") != null){
 		document.getElementById("controllpage").innerHTML = sessionStorage.getItem("supervisor")
 	}
 }

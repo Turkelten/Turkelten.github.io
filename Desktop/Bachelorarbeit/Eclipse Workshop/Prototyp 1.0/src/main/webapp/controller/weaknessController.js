@@ -1,5 +1,5 @@
 function loadControllPara(){
-	if(sessionStorage.getItem("weaknesses")){
+	if(sessionStorage.getItem("weaknesses") && sessionStorage.getItem("weaknesses") != null){
 		document.getElementById("controllpage").innerHTML = sessionStorage.getItem("weaknesses")
 	}
 }
@@ -12,7 +12,7 @@ function saveInSession() {
 
 
 function loadparameter(){
-	if(sessionStorage.getItem("weaknesses")){
+	if(sessionStorage.getItem("weaknesses") && sessionStorage.getItem("weaknesses") != null){
 			document.getElementById("weaknesses").innerHTML = sessionStorage.getItem("weaknesses")
 		}
  }
