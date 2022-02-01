@@ -1,13 +1,13 @@
 //Tooltipp Einstellung
 
 tippy('#backButton', {
-    content: 'Zurück zur Startseite',
+    content: 'Zurück',
   });
 tippy('#importButton', {
-    content: 'JSON Importieren',
+    content: 'Daten hochladen',
   });
 tippy('#exportButton', {
-    content: 'JSON Exportieren',
+    content: 'Daten herunterladen',
   });
 tippy('#printPageButton', {
     content: 'Zur Druckübersicht',

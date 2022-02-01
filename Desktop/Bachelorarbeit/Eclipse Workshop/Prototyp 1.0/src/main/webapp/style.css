@@ -47,8 +47,8 @@
 }
 
 .form div {
-	padding: 20px;
   	background: #4CAF50;
+  	margin-right: 33px;
 }
 
 .form div:hover,.form div:active,.form div:focus {
@@ -191,6 +191,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	height:98%;
 	gap: 0px 0px;
+	background: DimGray;
 	grid-template-areas:
 	    "TitelArea TitelArea"
 	    "SubtitelArea SubtitelArea"
@@ -198,10 +199,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	    "Navigation-Bar Navigation-Bar";
 }
 
-.TitelArea { grid-area: TitelArea; background: DimGray;background-color: #333; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.TitelArea { grid-area: TitelArea; background-color: #333 }
 
 .TitelArea H2 {
 	padding-left: 2%;
+	
 }
 
 .Navigation-Bar { grid-area: Navigation-Bar;  background: DimGray}
@@ -421,3 +423,66 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.tutorialContainer {  display: grid;
+  grid-template-columns: 1.2fr;
+  grid-template-rows: 0.4fr 2.3fr 0.3fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: DimGray;
+  gap: 0px 0px;
+  height: 98%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "Image"
+    "Navbar-Tutorial";
+}
+
+.Header { grid-area: Header; background: DimGray; background-color: #333; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 20px}
+
+.Header H2 {
+	padding-left: 2%;
+	font-size: 40px;
+}
+
+.Image { grid-area: Image; background: DimGray; margin-left: auto; margin-right: auto}
+
+.Image img{ 
+	 margin-top: auto; margin-bottom: 20px}
+
+.Navbar-Tutorial { grid-area: Navbar-Tutorial; background: DimGray; margin-top: 44px; }
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+a.fill-div:hover {
+    background-color: white;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+a.fill-div:active {
+    background-color: #c8c8cc;
+     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+a.fill-div-menue {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+a.fill-div-menue:hover {
+    background-color: #4CAF50;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+a.fill-div-menue:active {
+    background-color: #43A047;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
