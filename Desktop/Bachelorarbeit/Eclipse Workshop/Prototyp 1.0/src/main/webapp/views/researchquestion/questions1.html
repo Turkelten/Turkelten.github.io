@@ -7,27 +7,53 @@
 	<title>Prototype</title>
 </head>
 <body onload="loadparameter()">
-	<div class="container">
+	<div class="container" style="grid-template-rows: 12% 20% 61% 7%;">
 	  <div class="TitelArea">
 		  	<h2>Forschungsfragen</h2>
 	  </div>
 	  <div class="SubtitelArea">
-	  		<h3>Bitte definieren Sie hier ihre Forschungsfragen.</h3>
+	  		<h3>Die Fragestellung wird aus der Problemstellung abgeleitet. Mit der Fragestellung wird ein Aspekt der Problemstellung detaillierter betrachtet.<br>
+				Im Bereich der Wirtschaftsinformatik sind zwei Grundtypen von Fragestellungen relevant:<br>
+				<br>
+				<b>Ziel der Erklärung</b><br>
+				Hier versuchst Du etwas zu verstehen, etwas zu erklären. Wahrheit und Erkenntnis spielen eine tragende Rolle.<br>
+				Warum ist etwas der Fall? Wie lässt sich ein Sachverhalt erklären?<br>
+				Beispielsweise, warum unterscheidet sich x von y? <br>
+				Warum hat sich xy verändert?<br>
+				<br>
+				<b>Ziel der Gestaltung</b><br>
+				Hier entwirfst Du etwas, baust etwas und kreierst eine nützliche Lösung.<br>
+				Wie lässt sich ein Sachverhalt gestalten?<br>
+				Welche Maßnahmen sind geeignet, um ein bestimmtes Ziel zu erreichen?<br>
+				Beispielsweise, wie kann xy gefördert werden? Welche Maßnahmen eignen sich, um xy zu erzeugen?<br>
+				<br>
+				Eine Forschungsfrage sollte in ihrer Formulierung anzeigen, welchem Typ sie entspricht. Die Forschungsfrage legt größtenteils fest, wie Du allgemein in Deiner Abschlussarbeit forschst. 
+				Das Forschungsdesign inklusive Forschungsstrategie, Methoden und Techniken hängt signifikant davon ab, wie Du bezogen auf Deine Problemstellung, fragst.
+								
+			</h3>
 	  </div>
 	  <div class="InputArea">
 	  <div class="wrapper">
-	  	<textarea class="WholePageArea" name="questions" id="questions" maxlength="200"></textarea>
+	  	<textarea class="WholePageArea" name="questions" id="questions" maxlength="250"></textarea>
 	  	</div>
 	  </div>
 	  <div class="InformationArea">
-	   <div class="InformationText">
+	   <div class="InformationText" style="font-size: 25px;">
    			<b>Deine Problemstellung:</b><br>
-		  	<label id="lblallProblems"></label> <br><br><br>
-		   	<b>Leitfragen</b> <br>
-		  	<label>Was am definierten Problem interessiert mich und wie möchte ich es erforschen?</label> <br> <br>
-			<label>Wie hängt die Forschungsfrage mit dem gewählten Problem zusammen?</label> <br> <br>
-		  	<label>Auf welche Art möchte ich es genau erforschen?</label> <br> <br>
-			<label>Besitzt meine Forschungsfrage ggf Unterfragen?</label> <br> <br>
+		  	<label id="lblallProblems"></label> <br><br>
+		   	<b>Leitfragen</b>
+		  	<ul>
+		  		<li>Welcher Perspektive möchtest Du einnehmen:
+			  		<ul>
+				  		<li>Möchtest Du ein Problem besser Verstehen oder erklären?</li>
+				  		<li>Möchtest Du aktiv einen Sachverhalt gestalten und eine konkrete Lösung konzipieren, 
+				  			konstruieren, entwickeln oder bauen, die ein bestimmtes Problem adressiert?</li>
+			  		</ul>
+		  		</li>
+		  		<li>
+		  			Welcher Aspekt der Problemstellung interessiert Dich und wie möchtest Du diesen erforschen?
+		  		</li>
+		  	</ul>
 
 	   </div>
 	  </div>

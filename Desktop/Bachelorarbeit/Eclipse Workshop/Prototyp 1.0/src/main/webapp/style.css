@@ -191,7 +191,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	height:98%;
 	gap: 0px 0px;
-	background: DimGray;
+	background: white;
 	grid-template-areas:
 	    "TitelArea TitelArea"
 	    "SubtitelArea SubtitelArea"
@@ -199,20 +199,25 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	    "Navigation-Bar Navigation-Bar";
 }
 
-.TitelArea { grid-area: TitelArea; background-color: #333 }
+.TitelArea { grid-area: TitelArea; background-color:white;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .TitelArea H2 {
 	padding-left: 2%;
 	
 }
 
-.Navigation-Bar { grid-area: Navigation-Bar;  background: DimGray}
+.Navigation-Bar { grid-area: Navigation-Bar;  background:white}
 
-.InputArea { grid-area: InputArea;  background: DimGray}
+.InputArea { grid-area: InputArea;  background: white;}
 
-.InformationArea { grid-area: InformationArea;  background: DimGray; padding: 2%; height: auto; width: auto }
+.InformationArea { grid-area: InformationArea;  background:white; padding: 2%; height: auto; width: auto }
 
-.SubtitelArea { grid-area: SubtitelArea;  background: DimGray }
+.SubtitelArea { grid-area: SubtitelArea;  background:white; overflow: auto; box-shadow: inset 0 2em 3em -3em black}
+
+.SubtitelArea label {
+	overflow: auto;
+	display: block;
+}
 
 .wrapper {
 	padding: 2%;
@@ -229,6 +234,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .TitelArea h2 {
 	font-size: 40px;
+	color: black;
 }
 
 .SubtitelArea h3 {
@@ -239,7 +245,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .persNavbar{
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -308,6 +314,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .InformationText label {
 	font-size: 25px;
+	text-align: justify;
 }
 
 .InformationText b {
@@ -427,7 +434,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   grid-template-columns: 1.2fr;
   grid-template-rows: 0.4fr 2.3fr 0.3fr;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: DimGray;
+  background: white;
   gap: 0px 0px;
   height: 98%;
   grid-auto-flow: row;
@@ -437,19 +444,19 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     "Navbar-Tutorial";
 }
 
-.Header { grid-area: Header; background: DimGray; background-color: #333; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 20px}
+.Header { grid-area: Header; background: white; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .Header H2 {
 	padding-left: 2%;
 	font-size: 40px;
 }
 
-.Image { grid-area: Image; background: DimGray; margin-left: auto; margin-right: auto}
+.Image { grid-area: Image; background: white; margin-left: auto; margin-right: auto; margin-top: 20px}
 
 .Image img{ 
 	 margin-top: auto; margin-bottom: 20px}
 
-.Navbar-Tutorial { grid-area: Navbar-Tutorial; background: DimGray; margin-top: 44px; }
+.Navbar-Tutorial { grid-area: Navbar-Tutorial; background: white; margin-top: 44px; }
 
 a.fill-div {
     display: block;
@@ -486,3 +493,12 @@ a.fill-div-menue:active {
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+div.fill-div-botshadow {
+    height: 90%;
+    width: 100%;
+    text-decoration: none;
+    box-shadow: 0px 15px 10px -15px #111; 
+}
+

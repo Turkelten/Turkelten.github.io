@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../style.css">
+		<title>Prototype</title>
+	</head>
+	<body>
+	
+	<div class="tutorialContainer">
+	  	<div class="Header">
+		  	<h2>Tutorial - Navigation</h2>
+	  	</div>
+	 	<div class="Image">
+	  		<img width="800" height="600" alt="Navigation Bar" src="../pictures/Navigation.png"  class="responsive">
+	  	</div>	
+  		<div class="Navbar-Tutorial">
+	  		<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a  id="backButton" id="canvasButton" style="float:left" href="../index.html"><img alt="" src="../icons/back.png"></a> 
+			 	 	<div style="  margin-left: 42%;">
+ 				 	 	<a class="active" href="tutorial.html" ><img alt="" src="../icons/1.png"></a> 
+				  	 	<a href="tutorial2.html"><img alt="" src="../icons/2.png"></a> 
+				  	 	<a href="tutorial3.html"><img alt="" src="../icons/3.png"></a> 
+			 	 	</div>
+					<a id="nextButton" href="tutorial2.html" style="float:right"><img alt="" src="../icons/right.png"></a>
+				  	 <!-- <a style="float:right" href="../video.html" onclick="saveInSession()"><img alt="" src="../../pictures/youtubeIcon.png"></a> 
+				  	<a style="float:right" href="" onclick="saveInSession()"><img alt="" src="../../pictures/speakerIcon.png"></a> -->
+				</div> 
+			</div> 
+		</div>  	
+	</div>
+	
+	</body>
+	<script src="../controller/tutorial.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../controller/tooltipController.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../style.css">
+		<title>Prototype</title>
+	</head>
+	<body>
+	
+	<div class="tutorialContainer">
+	  	<div class="Header">
+		  	<h2>Tutorial - Funktionen</h2>
+	  	</div>
+	  	<div class="Image">
+	  		<div class="InformationText">
+				<b>So funktionierts:</b><br> <br>
+				<ul>
+					<li style="font-size: 24px;"> Sie können jederzeit vorwärts und rückwärts durch die Anwendung navigieren </li>
+					<li style="font-size: 24px;"> Einen Startpunkt gibt es nicht </li>
+					<li style="font-size: 24px;"> Beim Navigieren werden alle Daten die zuvor eingegeben wurden automatisch im Feld gespeichert </li>
+					<li style="font-size: 24px;"> Das "persmanente" Speichern 
+						<ul>
+							<li style="font-size: 24px;"> ist nur auf der Kontrollseite (letzte Seite) möglich   </li>
+							<li style="font-size: 24px;"> schließt ein Feld nach der Bearbeitung ab </li>
+							<li style="font-size: 24px;"> ermöglicht die Druckausgabe eines Feldes</li>
+						</ul>
+					</li>
+					<li style="font-size: 24px;"> Nach dem "persmanente" Speichern können die Daten immernoch geändert werden</li>
+					<li style="font-size: 24px;"> Möchten Sie zu einem Späteren Zeitpunkt Weiterarbeiten, gibt es auf der Hauptseite einen Datei Export</li>
+					<li style="font-size: 24px;"> Laden Sie die Exportierte Datei einfach wieder hoch und Arbeiten Sie weiter</li>
+					<li style="font-size: 24px;"> Ihre Ausgefüllte Canvas können Sie über die Druckansicht anschauen und sich herunterladen!</li>
+		     	</ul><br> <br>
+		     	
+		   	</div>
+	  	</div>
+  		<div class="Navbar-Tutorial">
+	  		<div class="wrappermarginmid">
+				<div class="persNavbar">
+				 	<a id="backButton" style="float:left" href="tutorial.html"><img alt="" src="../icons/back.png"></a> 
+			 	 	<div style="  margin-left: 42%;">
+ 				 	 	<a  href="tutorial.html" ><img alt="" src="../icons/1.png"></a> 
+				  	 	<a class="active" href="tutorial2.html"><img alt="" src="../icons/2.png"></a> 
+				  	 	<a href="tutorial3.html"><img alt="" src="../icons/3.png"></a> 
+			 	 	</div>
+					<a id="nextButton" href="tutorial3.html" style="float:right"><img alt="" src="../icons/right.png"></a>
+				 
+				</div> 
+			</div> 
+		</div>  	
+	</div>
+	
+	</body>
+	<script src="../controller/tutorial.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script src="../controller/tooltipController.js"></script>
+</html>
